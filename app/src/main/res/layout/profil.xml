@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/profil_pic"
         android:layout_width="152dp"
         android:layout_height="156dp"
         android:layout_marginTop="16dp"
@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/default_profile" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/profil_name"
         android:layout_width="171dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/profil_email"
         android:layout_width="171dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
@@ -38,10 +38,10 @@
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/profil_name" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/profil_number"
         android:layout_width="171dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
@@ -50,10 +50,10 @@
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/profil_email" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/profil_comment"
         android:layout_width="337dp"
         android:layout_height="29dp"
         android:layout_marginStart="16dp"
@@ -65,10 +65,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/profil_number" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/profil_myAd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -77,62 +77,63 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/profil_comment" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/profil_createAd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="Inserat erstellen"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/profil_myAd" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/profil_changeName"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/profil_name"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/profil_changeEmail"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/profil_email"
+        app:layout_constraintTop_toBottomOf="@+id/profil_changeName"
         app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/profil_changeNumber"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginTop="12dp"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintStart_toEndOf="@+id/profil_number"
+        app:layout_constraintTop_toBottomOf="@+id/profil_changeEmail"
         app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/profil_changeComment"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/profil_comment"
+        app:layout_constraintTop_toBottomOf="@+id/profil_pic"
         app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/profil_changePic"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/profil_pic"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@android:drawable/ic_menu_edit" />
 
