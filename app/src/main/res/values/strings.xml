@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Bachelorarbeit</string>
+    <string name="underlined"><u>%s</u></string>
 </resources>

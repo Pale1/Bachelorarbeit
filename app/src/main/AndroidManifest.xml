@@ -28,6 +28,37 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Profil"/>
         </activity>
+        <activity
+            android:name=".SignIn"
+            android:label="SignIn">
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="Registrierung"
+            android:parentActivityName=".SignIn">
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SignIn"/>
+        </activity>
+        <activity
+            android:name=".MyAds"
+            android:label="Meine Inserate"
+            android:parentActivityName=".Profil">
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Profil"/>
+        </activity>
+        <activity
+            android:name=".Ad"
+            android:label="Inserat"
+            android:parentActivityName=".Home">
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home"/>
+        </activity>
     </application>
 
 </manifest>
